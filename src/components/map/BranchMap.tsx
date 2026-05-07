@@ -71,10 +71,10 @@ export function BranchMap({
 
       // Animate zoom-in: Ethiopia → Addis Ababa → branch cluster
       setTimeout(() => {
-        map.flyTo([8.5, 39], 6, { duration: 1.5, easing: (x: number) => x })
+        map.flyTo([8.5, 39], 6, { duration: 1.5 })
       }, 300)
       setTimeout(() => {
-        map.flyTo(AA_CENTER, 12, { duration: 2, easing: (x: number) => x })
+        map.flyTo(AA_CENTER, 12, { duration: 2 })
       }, 2000)
 
       // Add branch markers
