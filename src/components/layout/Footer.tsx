@@ -39,7 +39,7 @@ export function Footer() {
               ))}
               {/* TikTok icon */}
               <a
-                href="https://www.tiktok.com/@cleanobrand"
+                href="https://www.tiktok.com/@cleano_official"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 bg-white/10 hover:bg-cleano-blue rounded-xl flex items-center justify-center transition-colors text-xs font-black"
@@ -80,12 +80,12 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-blue-200">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-cleano-sky" />
-                <span>Bole Road, Near Edna Mall, Addis Ababa, Ethiopia</span>
+                <span> Mafi Mall, Bole Road, Addis Ababa, Ethiopia</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 shrink-0 text-cleano-sky" />
-                <a href="tel:+251911234567" className="hover:text-white transition-colors">
-                  +251 91 123 4567
+                <a href="tel:+251917888888" className="hover:text-white transition-colors">
+                  +251 91 788 8888
                 </a>
               </li>
               <li className="flex items-center gap-2">
