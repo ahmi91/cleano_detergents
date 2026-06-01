@@ -1,68 +1,67 @@
 [
   {
-    "id": "cleano-ultra-blue",
+    "id": "cleano-laundry-detergent",
     "name": {
-      "en": "CLEANO Ultra Blue",
-      "am": "ክሊኖ ኡልትራ ብሉ"
+      "en": "CLEANO Laundry Detergent",
+      "am": "የክሊኖ የልብስ ማጠቢያ ሳሙና"
     },
     "description": {
       "en": "Our flagship formula engineered for Ethiopia's toughest stains. Ultra Blue penetrates deep into fabric fibers, removing grease, mud, and organic stains while leaving a fresh, long-lasting fragrance. Suitable for hand and machine washing.",
       "am": "ለኢትዮጵያ ጠንካራ ቆሻሻ የተዘጋጀ ዋና ቀመራችን። ኡልትራ ብሉ ወደ ጨርቅ ፋይበር ውስጥ ዘልቆ ይገባል፣ ቅባት፣ ጭቃ እና ኦርጋኒክ ቆሻሻን ሲያስወግድ ትኩስ፣ ዘላቂ መዓዛ ይተዋል። ለእጅ እና ለማሽን ልብስ ማጠቢያ ተስማሚ።"
     },
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    "category": "laundry",
+    "image": "https://ibb.co/kVpwG7KH",
+    "category": "laundry Detergent",
     "prices": {
-      "3L": 120,
-      "5L": 185
+      "3L": 590,
+      "5L": 850
     },
     "badge": "Best Seller",
     "rating": 4.9,
     "reviews": 1240,
     "tiktokVideos": [
-      "https://www.tiktok.com/@cleanobrand/video/7001234567890",
-      "https://www.tiktok.com/@cleanobrand/video/7001234567891"
+      "https://www.tiktok.com/@cleano_official"
     ],
     "featured": true
   },
   {
-    "id": "cleano-lemon-fresh",
+    "id": "cleano-dishwash",
     "name": {
-      "en": "CLEANO Lemon Fresh",
-      "am": "ክሊኖ ሎሚ ፍሬሽ"
+      "en": "CLEANO Dishwash",
+      "am": "የክሊኖ የእቃ ማጠቢያ"
     },
     "description": {
       "en": "Infused with real lemon extracts, this formula cuts through kitchen grease and bathroom grime effortlessly. The antibacterial properties protect your family while the vibrant citrus scent energizes your home.",
       "am": "በትክክለኛ የሎሚ ሀረጎች የተቀመመ፣ ይህ ቀመር የኩሽና ቅባትን እና የመታጠቢያ ቤት ቆሻሻን በቀላሉ ያቋርጣል። ፀረ-ባክቴሪያ ባህሪያቱ ቤተሰብዎን ሲጠብቅ ብርቱ የሎሚ መዓዛ ቤትዎን ያድሳል።"
     },
-    "image": "https://images.unsplash.com/photo-1587556930799-8dca6fad6d43?w=600&q=80",
-    "category": "multipurpose",
+    "image": "https://ibb.co/fGVgKsJg",
+    "category": "Kitchen",
     "prices": {
-      "3L": 110,
-      "5L": 170
+      "3L": 560,
+      "5L": 730
     },
     "badge": "New",
     "rating": 4.7,
     "reviews": 876,
     "tiktokVideos": [
-      "https://www.tiktok.com/@cleanobrand/video/7001234567892"
+      "https://www.tiktok.com/@cleano_official"
     ],
     "featured": true
   },
   {
-    "id": "cleano-white-power",
+    "id": "cleano-antiseptic-disinfectant",
     "name": {
-      "en": "CLEANO White Power",
-      "am": "ክሊኖ ዋይት ፓወር"
+      "en": "CLEANO Antiseptic Disinfectant",
+      "am": "ክሊኖ አንቲሴፕቲክ ፀረ-ተባይ"
     },
     "description": {
       "en": "Specially designed for white and light-colored fabrics. White Power restores brightness and removes yellowing with an advanced optical brightener technology, keeping your whites gleaming white even after 100 washes.",
       "am": "ለነጭ እና ለቀለል ያሉ ጨርቆች በተለይ የተዘጋጀ። ዋይት ፓወር ብሩህነትን ያድሳል እና ቢጫነትን ያስወግዳል፣ ከ100 ጊዜ ማጠብ በኋላም ቢሆን ነጮቹ ብሩህ ነጭ ሆነው ይቆያሉ።"
     },
-    "image": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=600&q=80",
-    "category": "laundry",
+    "image": "https://ibb.co/BHQYk0SC",
+    "category": "Antiseptic",
     "prices": {
-      "3L": 130,
-      "5L": 200
+      "3L": 630,
+      "5L": 850
     },
     "badge": "Premium",
     "rating": 4.8,
