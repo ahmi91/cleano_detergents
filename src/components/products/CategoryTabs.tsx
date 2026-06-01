@@ -16,10 +16,10 @@ export function CategoryTabs() {
   const cats: { key: string; label: string }[] = [
     { key: 'all',         label: t.products.allCategories },
     { key: 'laundry',     label: t.products.laundry },
-    { key: 'multipurpose',label: t.products.multipurpose },
+    { key: 'Kitchen',     label: t.products.Kitchen },
     { key: 'floor',       label: t.products.floor },
-    { key: 'dishes',      label: t.products.dishes },
-    { key: 'baby',        label: t.products.baby },
+    { key: 'Antiseptics', label: t.products.Antiseptics },
+    { key: 'Other',       label: t.products.Other },
   ]
 
   return (
