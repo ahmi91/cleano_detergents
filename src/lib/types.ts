@@ -10,11 +10,17 @@ export interface ProductPrices {
   '5L': number
 }
 
+export interface ProductImages {
+  '3L': string
+  '5L': string
+}
+
 export interface Product {
   id: string
   name: LocalizedString
   description: LocalizedString
   image: string
+  images?: ProductImages
   category: ProductCategory
   prices: ProductPrices
   badge: string | null
