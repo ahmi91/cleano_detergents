@@ -63,7 +63,11 @@ export function ContentClient({ sections: initialSections }: { sections: Section
   return next
 })
         closeEdit()
-        setTimeout(() => setSavedIds(prev => { const n = new Set(prev); n.delete(form.id); return n }), 2000)
+        setTimeout(() => setSavedIds(prev => {
+  const next = new Set(prev)
+  next.add(form.id)
+  return next
+}), 2000)
       }
     } finally { setSaving(false) }
   }
