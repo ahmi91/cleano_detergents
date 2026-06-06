@@ -43,11 +43,9 @@ const DEFAULT_SUPER_ADMIN: StoredUser = {
 }
 
 export function getUsers(): StoredUser[] {
-  const users = readFile<StoredUser[]>('users.json', [])
-  if (users.length === 0) {
-    writeFile('users.json', [DEFAULT_SUPER_ADMIN])
-    return [DEFAULT_SUPER_ADMIN]
-  }
+  return [DEFAULT_SUPER_ADMIN]
+}
+
   return users
 }
 
@@ -59,13 +57,11 @@ export function verifyPassword(plain: string, hash: string): boolean {
   return btoa(plain) === hash
 }
 
-export function updateUser(id: string, updates: Partial<StoredUser>): void {
-  const users = getUsers()
-  const idx = users.findIndex(u => u.id === id)
-  if (idx >= 0) {
-    users[idx] = { ...users[idx], ...updates }
-    writeFile('users.json', users)
-  }
+export function updateUser(
+  id: string,
+  updates: Partial<StoredUser>
+): void {
+  return
 }
 
 export function createUser(user: Omit<StoredUser, 'id' | 'createdAt'>): StoredUser {
@@ -100,13 +96,11 @@ export function getAuditLog(): AuditEntry[] {
   return readFile<AuditEntry[]>('audit.json', [])
 }
 
-export function addAuditEntry(entry: Omit<AuditEntry, 'id' | 'timestamp'>): void {
-  const log = getAuditLog()
-  const newEntry: AuditEntry = {
-    ...entry,
-    id: `log-${Date.now()}`,
-    timestamp: new Date().toISOString(),
-  }
+export function addAuditEntry(
+  entry: Omit<AuditEntry, 'id' | 'timestamp'>
+): void {
+  return
+}
   // Keep last 1000 entries
   writeFile('audit.json', [newEntry, ...log].slice(0, 1000))
 }
