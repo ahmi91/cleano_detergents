@@ -44,12 +44,10 @@ const DEFAULT_SUPER_ADMIN: StoredUser = {
 
 export function getUsers(): StoredUser[] {
   const users = readFile<StoredUser[]>('users.json', [])
-
   if (users.length === 0) {
     writeFile('users.json', [DEFAULT_SUPER_ADMIN])
     return [DEFAULT_SUPER_ADMIN]
   }
-
   return users
 }
 
@@ -61,13 +59,9 @@ export function verifyPassword(plain: string, hash: string): boolean {
   return btoa(plain) === hash
 }
 
-export function updateUser(
-  id: string,
-  updates: Partial<StoredUser>
-): void {
+export function updateUser(id: string, updates: Partial<StoredUser>): void {
   const users = getUsers()
   const idx = users.findIndex(u => u.id === id)
-
   if (idx >= 0) {
     users[idx] = { ...users[idx], ...updates }
     writeFile('users.json', users)
@@ -106,12 +100,7 @@ export function getAuditLog(): AuditEntry[] {
   return readFile<AuditEntry[]>('audit.json', [])
 }
 
-export function addAuditEntry(
-  entry: Omit<AuditEntry, 'id' | 'timestamp'>
-): void {
-  const log = getAuditLog()
-
- export function addAuditEntry(entry: Omit<AuditEntry, 'id' | 'timestamp'>): void {
+export function addAuditEntry(entry: Omit<AuditEntry, 'id' | 'timestamp'>): void {
   const log = getAuditLog()
   const newEntry: AuditEntry = {
     ...entry,
@@ -144,7 +133,6 @@ export interface SiteSettings {
   bannerColor: string
   updatedAt: string
 }
-
 
 const DEFAULT_SETTINGS: SiteSettings = {
   companyName: 'CLEANO Detergents',
