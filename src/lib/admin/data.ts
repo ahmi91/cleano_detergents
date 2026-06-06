@@ -122,7 +122,8 @@ export function addAuditEntry(
     [newEntry, ...log].slice(0, 1000)
   )
 }
-  // Keep last 1000 entries
+
+// Keep last 1000 entries
   writeFile('audit.json', [newEntry, ...log].slice(0, 1000))
 }
 
