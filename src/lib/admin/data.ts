@@ -111,19 +111,14 @@ export function addAuditEntry(
 ): void {
   const log = getAuditLog()
 
+ export function addAuditEntry(entry: Omit<AuditEntry, 'id' | 'timestamp'>): void {
+  const log = getAuditLog()
   const newEntry: AuditEntry = {
     ...entry,
     id: `log-${Date.now()}`,
     timestamp: new Date().toISOString(),
   }
-
-  writeFile(
-    'audit.json',
-    [newEntry, ...log].slice(0, 1000)
-  )
-}
-
-// Keep last 1000 entries
+  // Keep last 1000 entries
   writeFile('audit.json', [newEntry, ...log].slice(0, 1000))
 }
 
@@ -149,6 +144,7 @@ export interface SiteSettings {
   bannerColor: string
   updatedAt: string
 }
+
 
 const DEFAULT_SETTINGS: SiteSettings = {
   companyName: 'CLEANO Detergents',
